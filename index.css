@@ -35,8 +35,16 @@ header {
 .head-list .active {
   color: black;
 }
+.menu {
+  display: none;
+}
+.first {
+  padding: 0 24px 40px 24px;
+  margin-bottom: 40px;
+}
 .first-part {
   padding: 0 23%;
+  text-align: center;
 }
 .first-part h1 {
   font-size: 60px;
@@ -47,7 +55,7 @@ header {
   font-size: 18px;
 }
 .second-part .one {
-  padding: 0 24px;
+  padding: 32px 56px 32px 56px;
   text-align: left;
 }
 .second-part .one h4 {
@@ -141,6 +149,7 @@ header {
   background-color: #fff;
   padding: 48px 32px;
   border: 1px solid rgb(214, 218, 229);
+  margin-left: -24px;
 }
 .second-part .three h4 {
   margin-top: -48px;
@@ -235,11 +244,11 @@ header {
 
   color: rgb(70, 73, 81);
 }
-footer .one img {
+
+footer .pulse img {
   margin-bottom: 48px;
 }
-
-footer .one p a {
+footer .pulse p a {
   padding: 16px 32px;
   background-color: rgb(31, 227, 116);
   color: rgb(6, 44, 39);
@@ -263,4 +272,64 @@ footer .one ul li {
   font-size: 18px;
   font-weight: 400;
   color: rgb(31, 227, 116);
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .head-list li a {
+    margin-left: 20px;
+  }
+  .head-list .sign-up {
+    margin-left: 20px;
+  }
+  .first {
+    padding: 0 24px 16px 24px;
+    margin-bottom: 0px;
+  }
+  .first-part {
+    padding: 0;
+    text-align: start;
+  }
+  .first-part p {
+    font-size: 18px;
+    text-align: left;
+  }
+  .second-part .one {
+    padding: 20px 0px 20px 0px;
+  }
+  .second-part .three {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 300px) and (max-width: 787.98px) {
+  header {
+    padding: 16px 24px;
+    background-color: #fff;
+  }
+  .menu {
+    display: block;
+  }
+  .menu a {
+    color: black;
+    font-size: 48px;
+  }
+  .head-list {
+    display: none;
+  }
+  footer .pulse {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 300px) and (max-width: 425.98px) {
+  .first {
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .first-part h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
 }
